@@ -1,0 +1,127 @@
+:root {
+    --vermelho   : #e50914;
+    --preto      : #141414;
+    --branco     : #ffffff;
+    --sinza      : #aaa;
+    --sinza-hover: #B3B3A3;
+}
+
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+/* ELEMENTOS BASE */
+
+body {
+    background : var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color      : var(--branco);
+}
+
+.container {
+    max-width: 90%;
+    margin   : auto;
+}
+
+header .container {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+}
+
+header .container>h2 {
+    color      : var(--vermelho);
+    font-family: 'Arial Black';
+    font-size  : 40px;
+}
+
+header .container>nav>ul {
+    display: flex;
+}
+
+header .container>nav>ul>li {
+    list-style   : none;
+    padding-right: 15px;
+}
+
+header .container>nav>ul>li a {
+    text-decoration: none;
+    color          : var(--sinza);
+}
+
+header .container>nav>ul>li>a.active {
+    color: var(--branco);
+}
+
+header .container>nav>ul>li>a:hover {
+    color: var(--sinza-hover);
+}
+
+.buttons .btn {
+    padding         : 15px 30px;
+    border          : none;
+    border-radius   : 5px;
+    background-color: rgba(0, 0, 0, 0.50);
+    color           : var(--branco);
+    margin-right    : 15px;
+    font-size       : 18px;
+    cursor          : pointer;
+    transition      : .3s ease all;
+}
+
+.buttons .btn>i {
+    margin-right: 8px;
+}
+
+.buttons .btn:hover {
+    color           : var(--preto);
+    background-color: var(--branco);
+}
+
+.buttons .btn.btn-white {
+    color           : var(--preto);
+    background-color: var(--branco);
+}
+
+.buttons .btn.btn-white:hover {
+    background-color: var(--preto);
+    color           : var(--branco);
+}
+
+.box-images-min {
+    height : 100%;
+    width  : 100%;
+    display: block;
+}
+
+/* CARTAZ */
+
+main .cartaz {
+    height         : 400px;
+    font-size      : 16px;
+    background     : linear-gradient(rgba(0, 0, 0.50), rgba(0, 0, 0, 0.50)100%), url("/assets/img/banners/banner1.jpg");
+    background-size: cover;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : flex-start;
+}
+
+main .cartaz .container .title {
+    font-size  : 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main .cartaz .container .description {
+    margin-top   : 10px;
+    margin-bottom: 40px;
+    width        : 70%;
+}
+
+/* THUMBS */
+
+.carrosel-animes {
+    margin: 7px 5px;
+}

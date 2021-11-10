@@ -1,0 +1,21 @@
+@media screen and (max-width: 700px) {
+    .container {
+        max-width: 95%;
+    }
+
+    header .container {
+        flex-direction: column;
+    }
+
+    header .container>nav>ul>li {
+        padding: 0 5px;
+    }
+
+    /* CARTAZ */
+
+    main .cartaz .container .title {
+        font-size  : 30px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+}
